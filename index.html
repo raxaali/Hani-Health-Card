@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c3878">
+  <meta name="description" content="Hani Health Discount Card — explore participating healthcare providers, manage membership and find locations. Affordable, inclusive healthcare.">
+  <title>Hani Health Discount Card | Affordable, Inclusive Healthcare</title>
+  <link rel="icon" href="assets/hani-health-mark.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <span class="announcement-dot"></span>
+      <span data-i18n="announce">A simpler way to find care and member offers</span>
+      <a href="#locations" data-i18n="scanLink">Scan for locations <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Hani Health homepage">
+        <img src="assets/hani-health-mark.jpg" alt="Hani Health mark" class="brand-mark">
+        <span class="brand-copy">
+          <strong>HANI <span>HEALTH</span></strong>
+          <span class="brand-sub">DISCOUNT CARD</span>
+          <small data-i18n="brandTagline">Affordable, Inclusive Healthcare</small>
+        </span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#benefits" data-i18n="navBenefits">Benefits</a>
+        <a href="#directory" data-i18n="navDirectory">Find care</a>
+        <a href="#digital-card" data-i18n="navCard">Digital card</a>
+        <a href="#verify" data-i18n="navVerify">Verify membership</a>
+        <button type="button" class="nav-admin" id="adminToggle" data-i18n="navAdmin">Admin demo</button>
+      </nav>
+      <div class="nav-actions">
+        <label class="language-picker" aria-label="Select language">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg>
+          <select id="languageSelect">
+            <option value="en">EN</option>
+            <option value="ar">العربية</option>
+            <option value="ur">اردو</option>
+            <option value="hi">हिन्दी</option>
+            <option value="bn">বাংলা</option>
+          </select>
+          <span class="chevron">⌄</span>
+        </label>
+        <a class="button button-primary button-small" href="#digital-card" data-i18n="navGetCard">Get your card <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="hero-glow hero-glow-one"></div><div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-icon">✦</span><span data-i18n="heroEyebrow">YOUR HEALTH, MADE MORE ACCESSIBLE</span></div>
+          <h1 data-i18n="heroTitle">Healthcare savings, <span class="title-accent">closer to home.</span></h1>
+          <p class="hero-description" data-i18n="heroDesc">One convenient membership to help you discover participating hospitals, clinics and pharmacies — and access the offers available to Hani Health members.</p>
+          <div class="hero-ctas">
+            <a href="#directory" class="button button-primary" data-i18n="heroFind">Explore healthcare providers <span aria-hidden="true">→</span></a>
+            <a href="#digital-card" class="button button-secondary" data-i18n="heroJoin">Get a digital card</a>
+          </div>
+          <div class="hero-reassurance">
+            <div class="reassurance-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 19 6v5c0 4.8-3 8-7 10-4-2-7-5.2-7-10V6z"></path><path d="m8.5 12 2.2 2.2 4.8-5"></path></svg></div>
+            <div><strong data-i18n="reassureTitle">Clear. Convenient. Member-focused.</strong><span data-i18n="reassureText">Provider participation and offers are shown in the directory.</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Hani Health membership card preview">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="floating-pill pill-top"><span class="live-dot"></span><span data-i18n="floatingNetwork">Healthcare network</span></div>
+          <div class="membership-card card-large">
+            <div class="card-glow"></div>
+            <div class="card-head">
+              <div class="card-brand-symbol"><img src="assets/hani-health-mark.jpg" alt=""></div>
+              <div class="card-brand-name"><strong>HANI HEALTH</strong><span>DISCOUNT CARD</span></div>
+              <div class="card-chip" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="card-member-label" data-i18n="cardMemberNo">MEMBERSHIP NO.</div>
+            <div class="card-number">0000&nbsp; 0000&nbsp; 0000&nbsp; 0000</div>
+            <div class="card-meta">
+              <div><small data-i18n="cardIssue">ISSUE</small><strong>00/00</strong></div>
+              <i></i>
+              <div><small data-i18n="cardExpiry">EXPIRY</small><strong>00/00</strong></div>
+            </div>
+            <div class="card-id"><small data-i18n="cardIqama">IQAMA / PASSPORT</small><strong>0000000000</strong></div>
+            <div class="card-bottom">
+              <div class="cardholder-block"><small data-i18n="cardholder">CARDHOLDER NAME</small><strong>0000000000</strong><span class="card-name-space" data-i18n="cardNameSpace">Member name goes here</span></div>
+              <div class="qr-wrap"><img src="assets/locations-qr.png" alt="Prototype QR code for the locations page"><span data-i18n="qrCaption">SCAN FOR LOCATIONS</span></div>
+            </div>
+            <div class="card-demo-mark" data-i18n="cardSample">SAMPLE CARD</div>
+          </div>
+          <div class="floating-pill pill-bottom"><span class="pill-check">✓</span><span data-i18n="floatingDigital">Digital-ready membership</span></div>
+          <div class="hero-orbit-star star-one">✳</div><div class="hero-orbit-star star-two">✦</div>
+          <p class="card-disclaimer" data-i18n="cardDisclaimer">Illustrative card preview · Not a valid membership card</p>
+        </div>
+      </div>
+      <div class="hero-bottom-wave" aria-hidden="true"></div>
+    </section>
+
+    <section class="proof-strip" aria-label="Platform highlights">
+      <div class="container proof-grid">
+        <div class="proof-item"><span class="proof-symbol">◎</span><div><strong data-i18n="proofOneTitle">One membership</strong><span data-i18n="proofOneText">A convenient card experience</span></div></div>
+        <div class="proof-item"><span class="proof-symbol">⌖</span><div><strong data-i18n="proofTwoTitle">Care near you</strong><span data-i18n="proofTwoText">Search providers by category</span></div></div>
+        <div class="proof-item"><span class="proof-symbol">↗</span><div><strong data-i18n="proofThreeTitle">Five languages</strong><span data-i18n="proofThreeText">A more inclusive experience</span></div></div>
+      </div>
+    </section>
+
+    <section class="section benefits-section" id="benefits">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker" data-i18n="benefitKicker">THE HANI HEALTH DIFFERENCE</span>
+          <h2 data-i18n="benefitTitle">Healthcare access, made simpler.</h2>
+          <p data-i18n="benefitDesc">A clear, convenient way to discover participating healthcare providers and understand your membership.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <div class="feature-icon feature-teal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18"></path><path d="M5.5 5.5c2.2-2.2 5.7-2.2 8 0L12 7l-1.5-1.5"></path><circle cx="17" cy="17" r="4"></circle><path d="m15.5 17 1 1 2-2"></path></svg></div>
+            <h3 data-i18n="benefitOneTitle">Applicable member offers</h3>
+            <p data-i18n="benefitOneText">Discover discounts offered by participating providers. Offers and exclusions depend on each provider's terms.</p>
+            <span class="card-index">01</span>
+          </article>
+          <article class="benefit-card benefit-featured">
+            <div class="feature-icon feature-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21z"></path><path d="M4 5.5V21M8 7h8M8 11h8"></path><circle cx="17" cy="16" r="3"></circle><path d="m16 16 1 1 2-2"></path></svg></div>
+            <h3 data-i18n="benefitTwoTitle">One searchable directory</h3>
+            <p data-i18n="benefitTwoText">Find hospitals, clinics and pharmacies from one place, then open directions for a selected location.</p>
+            <span class="card-index">02</span>
+          </article>
+          <article class="benefit-card">
+            <div class="feature-icon feature-green"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2.5"></rect><path d="M9 6h6M10 18h4"></path><path d="m9 12 2 2 4-4"></path></svg></div>
+            <h3 data-i18n="benefitThreeTitle">Membership on your device</h3>
+            <p data-i18n="benefitThreeText">Use a digital-first experience to start registration and check your membership status.</p>
+            <span class="card-index">03</span>
+          </article>
+        </div>
+        <div class="benefit-note"><span class="note-icon">i</span><p data-i18n="benefitNote">Hani Health is a discount membership concept, not a substitute for health insurance or medical advice. Confirm the final terms before purchasing.</p></div>
+      </div>
+    </section>
+
+    <section class="section directory-section" id="directory">
+      <div class="container">
+        <div class="directory-heading-row">
+          <div class="section-heading">
+            <span class="section-kicker" data-i18n="directoryKicker">YOUR CARE, AT YOUR FINGERTIPS</span>
+            <h2 data-i18n="directoryTitle">Find a healthcare provider.</h2>
+            <p data-i18n="directoryDesc">Search hospitals, clinics and pharmacies in the Hani Health directory.</p>
+          </div>
+          <div class="demo-label"><span class="demo-label-dot"></span><span data-i18n="demoData">Prototype listings</span></div>
+        </div>
+        <div class="directory-search-bar">
+          <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="providerSearch" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Search provider, area or service" aria-label="Search providers"></label>
+          <label class="select-box"><span data-i18n="filterLabel">Provider type</span><select id="providerType"><option value="all" data-i18n="filterAll">All providers</option><option value="hospital" data-i18n="typeHospital">Hospitals</option><option value="clinic" data-i18n="typeClinic">Clinics</option><option value="health-center" data-i18n="typeHealthCenter">Health centers</option><option value="pharmacy" data-i18n="typePharmacy">Pharmacies</option></select></label>
+          <button class="button button-dark" type="button" id="useLocation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-13A7 7 0 0 0 5 9c0 6.8 7 13 7 13Z"></path><circle cx="12" cy="9" r="2.5"></circle></svg><span data-i18n="nearMe">Use my location</span></button>
+        </div>
+        <div class="directory-layout">
+          <div class="provider-results">
+            <div class="results-topline"><strong id="resultsCount">4 demo listings</strong><span data-i18n="resultsNote">Provider information must be confirmed before launch</span></div>
+            <div class="provider-grid" id="providerGrid"></div>
+            <div class="empty-state" id="emptyState" hidden><span>⌕</span><strong data-i18n="noResults">No providers found</strong><p data-i18n="noResultsText">Try another search term or provider type.</p></div>
+          </div>
+          <aside class="map-preview">
+            <div class="map-topline"><div><span class="map-overline" data-i18n="mapLabel">LOCATION EXPLORER</span><h3 data-i18n="mapTitle">Care around you</h3></div><span class="map-pin-icon">⌖</span></div>
+            <div class="illustrated-map" aria-label="Map preview of sample provider locations">
+              <div class="map-grid-lines"></div><div class="map-river"></div><div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div>
+              <div class="map-area-label area-a">OLAYA</div><div class="map-area-label area-b">AL MALAZ</div><div class="map-area-label area-c">NAKHEEL</div>
+              <span class="map-pin pin-a"><i>✚</i></span><span class="map-pin pin-b"><i>✚</i></span><span class="map-pin pin-c"><i>✚</i></span><span class="map-pin pin-d"><i>✚</i></span>
+              <div class="map-legend"><span></span><span data-i18n="samplePins">Sample locations only</span></div>
+            </div>
+            <p class="map-help" data-i18n="mapHelp">Connect the production site to Google Maps to display verified contracted providers on a live map.</p>
+            <a href="https://www.google.com/maps/search/healthcare+Riyadh/" class="map-link" target="_blank" rel="noopener noreferrer"><span data-i18n="openMaps">Open Google Maps</span><span aria-hidden="true">↗</span></a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section membership-section" id="membership">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker" data-i18n="memberKicker">YOUR MEMBERSHIP JOURNEY</span>
+          <h2 data-i18n="memberTitle">Start with Hani Health.</h2>
+          <p data-i18n="memberDesc">Register for a digital card or check the status of an existing membership.</p>
+        </div>
+        <div class="membership-grid">
+          <article class="form-card registration-card" id="digital-card">
+            <div class="form-card-heading"><div class="form-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.5"></rect><path d="M3 10h18M7 15h4"></path><path d="m16 14 1.4 1.4L20 13"></path></svg></div><div><span class="form-eyebrow" data-i18n="registrationLabel">NEW MEMBER</span><h3 data-i18n="registrationTitle">Get your digital card</h3></div></div>
+            <p class="form-intro" data-i18n="registrationText">Enter your contact details to preview the registration flow. Secure payment is not connected in this demo.</p>
+            <form id="registrationForm" novalidate>
+              <div class="field-row"><label><span data-i18n="fullNameLabel">Full name</span><input type="text" name="fullName" id="fullName" autocomplete="name" data-i18n-placeholder="namePlaceholder" placeholder="As shown on your ID" required></label><label><span data-i18n="phoneLabel">Mobile number</span><input type="tel" name="phone" id="phone" autocomplete="tel" data-i18n-placeholder="phonePlaceholder" placeholder="+966 5X XXX XXXX" required></label></div>
+              <label class="field-full"><span data-i18n="emailLabel">Email address</span><input type="email" name="email" id="email" autocomplete="email" data-i18n-placeholder="emailPlaceholder" placeholder="you@example.com" required></label>
+              <label class="consent-check"><input type="checkbox" id="consent" required><span data-i18n="consentText">I agree to be contacted about this membership request and understand this is a prototype.</span></label>
+              <button class="button button-primary form-submit" type="submit" data-i18n="createCard">Create digital card preview <span aria-hidden="true">→</span></button>
+              <p class="privacy-hint"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"></path></svg><span data-i18n="privacyHint">Demo only. Do not enter real identity or payment information.</span></p>
+            </form>
+            <div id="registrationMessage" class="inline-message" role="status" hidden></div>
+            <div id="generatedCardWrap" class="generated-card-wrap" hidden>
+              <div class="generated-card" id="generatedCard">
+                <div class="generated-card-header"><img src="assets/hani-health-mark.jpg" alt=""><div><strong>HANI HEALTH</strong><small>DISCOUNT CARD</small></div><span class="generated-status">DEMO</span></div>
+                <div class="generated-number-label" data-i18n="membershipIdLabel">MEMBERSHIP ID</div><div class="generated-number" id="generatedNumber">HH-DEMO-2026</div>
+                <div class="generated-footer"><div><small data-i18n="cardholder">CARDHOLDER NAME</small><strong id="generatedName">Member name</strong></div><img src="assets/locations-qr.png" alt="Prototype locations QR code"></div>
+              </div>
+              <button class="button button-secondary form-submit" id="paymentDemo" type="button" data-i18n="paymentButton">Continue to payment (demo)</button>
+            </div>
+          </article>
+
+          <article class="form-card verification-card" id="verify">
+            <div class="form-card-heading"><div class="form-icon verify-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 19 6v5c0 4.8-3 8-7 10-4-2-7-5.2-7-10V6z"></path><path d="m8.5 12 2.2 2.2 4.8-5"></path></svg></div><div><span class="form-eyebrow" data-i18n="verifyLabel">EXISTING MEMBER</span><h3 data-i18n="verifyTitle">Check membership</h3></div></div>
+            <p class="form-intro" data-i18n="verifyText">Check a demo membership ID to see how eligibility status will appear on the live website.</p>
+            <form id="verificationForm" novalidate>
+              <label class="field-full"><span data-i18n="membershipIdLabel">Membership ID</span><input type="text" id="membershipId" placeholder="e.g. HH-DEMO-2026" required></label>
+              <div class="demo-id-hint"><span class="hint-star">✦</span><span data-i18n="demoIdHint">Try the demo ID: HH-DEMO-2026</span><button type="button" id="fillDemoId" data-i18n="useDemoId">Use ID</button></div>
+              <button class="button button-dark form-submit" type="submit" data-i18n="checkStatus">Check status <span aria-hidden="true">→</span></button>
+            </form>
+            <div id="verificationResult" class="verification-result" role="status" hidden></div>
+            <div class="verification-footnote"><span class="footnote-shield">✓</span><p data-i18n="verifyFootnote">Live eligibility checks must be connected to the protected membership database before launch.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="locations-cta" id="locations">
+      <div class="container locations-cta-grid">
+        <div class="locations-copy"><span class="section-kicker kicker-light" data-i18n="locationsKicker">NEED TO FIND A PROVIDER?</span><h2 data-i18n="locationsTitle">Scan. Search. Get directions.</h2><p data-i18n="locationsDesc">Your card's QR code is designed to take members straight to contracted provider locations. The live destination will be set after deployment.</p><a class="button button-white" href="#directory" data-i18n="locationsButton">Explore the directory <span aria-hidden="true">→</span></a></div>
+        <div class="locations-qr-card"><div class="qr-card-top"><span class="qr-brand-dot"></span><strong>HANI HEALTH</strong><span class="qr-badge" data-i18n="qrBadge">LOCATIONS</span></div><img src="assets/locations-qr.png" alt="Prototype QR code that must be updated after deployment"><div class="qr-caption" data-i18n="qrCaption">SCAN FOR LOCATIONS</div><div class="qr-url">hanihealth.example/locations</div><p data-i18n="qrDemoNote">Prototype QR code — replace with your live domain</p></div>
+      </div>
+    </section>
+
+    <section class="section steps-section">
+      <div class="container steps-grid">
+        <div class="section-heading steps-intro"><span class="section-kicker" data-i18n="stepsKicker">DESIGNED AROUND YOU</span><h2 data-i18n="stepsTitle">Simple from start to visit.</h2><p data-i18n="stepsDesc">A future-ready membership flow, with the key information kept close at hand.</p><a href="#digital-card" class="text-link" data-i18n="stepsLink">Start registration <span aria-hidden="true">→</span></a></div>
+        <div class="step-list">
+          <article class="step-item"><span class="step-num">01</span><div><h3 data-i18n="stepOneTitle">Register your details</h3><p data-i18n="stepOneText">Submit a membership request and choose the digital card option.</p></div><span class="step-icon">✦</span></article>
+          <article class="step-item"><span class="step-num">02</span><div><h3 data-i18n="stepTwoTitle">Find a participating provider</h3><p data-i18n="stepTwoText">Search by type, location or service and open directions.</p></div><span class="step-icon">⌖</span></article>
+          <article class="step-item"><span class="step-num">03</span><div><h3 data-i18n="stepThreeTitle">Present and verify your card</h3><p data-i18n="stepThreeText">Show your membership details and confirm eligibility with the provider.</p></div><span class="step-icon">✓</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-row"><div class="contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21z"></path><path d="M4 5.5V21M8 8h8M8 12h6"></path></svg></div><div class="contact-copy"><span class="section-kicker" data-i18n="contactKicker">WE'RE HERE TO HELP</span><h2 data-i18n="contactTitle">Questions about your membership?</h2><p data-i18n="contactText">Official customer-support phone, email and business details can be added here before the website goes live.</p></div><a href="#digital-card" class="button button-primary" data-i18n="contactButton">Explore membership <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="admin-section" id="adminPanel" hidden>
+      <div class="container admin-container">
+        <div id="adminAuth" class="admin-auth-card">
+          <div class="admin-auth-icon" aria-hidden="true">⌑</div>
+          <span class="section-kicker">RESTRICTED AREA</span>
+          <h2>Admin sign in</h2>
+          <p>Enter the admin password to manage member records and contracted healthcare providers.</p>
+          <form id="adminLoginForm" class="admin-login-form">
+            <label for="adminPassword">Admin password</label>
+            <input type="password" id="adminPassword" name="adminPassword" autocomplete="current-password" required placeholder="Enter admin password">
+            <button class="button button-primary form-submit" type="submit">Unlock dashboard <span aria-hidden="true">→</span></button>
+            <div id="adminLoginMessage" class="inline-message error" role="status" hidden></div>
+          </form>
+          <div class="admin-auth-note">This in-browser password gate is for local demonstration only. It is not secure authentication for real member information. Do not enter real identity or payment details.</div>
+        </div>
+
+        <div id="adminDashboard" hidden>
+          <div class="admin-header">
+            <div><span class="section-kicker">OPERATIONS MANAGEMENT</span><h2>Admin dashboard</h2><p>Manage demo memberships, issue card previews and maintain the contracted provider directory.</p></div>
+            <div class="admin-header-actions"><span class="prototype-badge"><span></span><span>Prototype mode</span></span><button class="button button-secondary button-small" type="button" id="adminLogout">Log out</button><button class="button button-secondary button-small" type="button" id="adminClose">Close dashboard</button></div>
+          </div>
+          <div class="admin-warning"><strong>Demo environment only</strong><span>Changes are saved in this browser only. Do not enter real national IDs or use this front-end password as production security. Use server-side authentication and a protected database before launch.</span></div>
+          <div class="admin-stat-grid">
+            <article class="admin-stat"><span>Member records</span><strong id="adminMemberCount">3</strong><small>Saved in this browser</small></article>
+            <article class="admin-stat"><span>Contracted providers</span><strong id="adminProviderCount">5</strong><small>Saved in this browser</small></article>
+            <article class="admin-stat"><span>Expiring in 60 days</span><strong id="adminExpiringCount">1</strong><small>Based on expiry date</small></article>
+          </div>
+
+          <div class="admin-table-card admin-wide-card">
+            <div class="admin-table-heading">
+              <div><h3>Member management</h3><p>Edit a member, update status, or issue/reissue a digital membership card.</p></div>
+              <div class="admin-heading-buttons"><button class="button button-primary button-small" type="button" id="addMemberToggle">＋ Add member</button><button class="button button-secondary button-small" type="button" id="exportMembers">Export CSV</button></div>
+            </div>
+            <div class="table-scroll"><table class="admin-members-table"><thead><tr><th>Member</th><th>Membership ID</th><th>Status / card</th><th>Expiry date</th><th>Actions</th></tr></thead><tbody id="adminMemberRows"></tbody></table></div>
+            <div id="adminMemberEmpty" class="admin-empty" hidden>No member records yet. Add a member to get started.</div>
+
+            <div id="memberFormPanel" class="admin-form-panel" hidden>
+              <div class="admin-form-panel-heading"><div><h4 id="memberFormTitle">Add member</h4><p>Use demo information only in this prototype.</p></div><button class="button button-secondary button-small" type="button" id="cancelMemberForm">Cancel</button></div>
+              <form id="memberForm" class="admin-edit-form">
+                <input type="hidden" id="memberOriginalId">
+                <label><span>Full name</span><input id="memberNameInput" required maxlength="120" placeholder="Member full name"></label>
+                <label><span>Membership ID</span><input id="memberIdInput" required maxlength="40" placeholder="HH-2026-0001"></label>
+                <label><span>National ID / passport (demo only)</span><input id="memberNationalIdInput" maxlength="80" placeholder="Optional demo value"></label>
+                <label><span>Mobile number</span><input id="memberPhoneInput" type="tel" maxlength="40" placeholder="Optional"></label>
+                <label><span>Email address</span><input id="memberEmailInput" type="email" maxlength="120" placeholder="Optional"></label>
+                <label><span>Issue date</span><input id="memberIssueDateInput" type="date" required></label>
+                <label><span>Expiry date</span><input id="memberExpiryDateInput" type="date" required></label>
+                <label><span>Membership status</span><select id="memberStatusInput"><option value="active">Active</option><option value="suspended">Suspended</option><option value="inactive">Inactive</option></select></label>
+                <div class="admin-form-actions"><button class="button button-primary button-small" type="submit" id="saveMemberButton">Save member</button><button class="button button-secondary button-small" type="button" id="cancelMemberForm2">Cancel</button></div>
+                <div id="memberFormMessage" class="inline-message" role="status" hidden></div>
+              </form>
+            </div>
+          </div>
+
+          <div id="adminIssuedCardWrap" class="admin-table-card admin-wide-card admin-issued-card-wrap" hidden>
+            <div class="admin-table-heading"><div><h3>Membership card</h3><p>Issued card preview for the selected member. Use Print / Save as PDF to create a local copy.</p></div><button class="button button-secondary button-small" type="button" id="closeIssuedCard">Close preview</button></div>
+            <div class="admin-card-preview-area">
+              <div class="generated-card admin-issued-card" id="adminIssuedCard">
+                <div class="generated-card-header"><img src="assets/hani-health-mark.jpg" alt=""><div><strong>HANI HEALTH</strong><small>DISCOUNT CARD</small></div><span class="generated-status">DEMO CARD</span></div>
+                <div class="generated-number-label">MEMBERSHIP ID</div><div class="generated-number" id="adminIssuedNumber">HH-2026-0001</div>
+                <div class="admin-issued-card-meta"><div><small>ISSUE</small><strong id="adminIssuedIssue">29 Oct 2026</strong></div><div><small>EXPIRY</small><strong id="adminIssuedExpiry">29 Oct 2027</strong></div></div>
+                <div class="admin-issued-card-id"><small>IQAMA / PASSPORT</small><strong id="adminIssuedNationalId">0000000000</strong></div>
+                <div class="generated-footer"><div><small>CARDHOLDER NAME</small><strong id="adminIssuedName">Member name</strong></div><img src="assets/locations-qr.png" alt="Prototype QR code for provider locations"></div>
+                <div class="admin-card-qr-caption">SCAN FOR LOCATIONS</div>
+              </div>
+              <div class="admin-issued-card-actions"><button class="button button-primary button-small" type="button" id="printIssuedCard">Print / Save as PDF</button><span>This is a visual preview; the production card must use a member-specific verified QR code.</span></div>
+            </div>
+          </div>
+
+          <div class="admin-table-card admin-wide-card admin-provider-management">
+            <div class="admin-table-heading"><div><h3>Hospitals & contracted healthcare providers</h3><p>Add, edit or remove hospitals, clinics, health centers and pharmacies in the directory.</p></div><span class="admin-add-icon">＋</span></div>
+            <div class="table-scroll"><table class="admin-providers-table"><thead><tr><th>Provider / facility</th><th>Type</th><th>Area</th><th>Phone</th><th>Actions</th></tr></thead><tbody id="adminProviderRows"></tbody></table></div>
+            <div id="adminProviderEmpty" class="admin-empty" hidden>No provider listings yet. Add a contracted healthcare provider below.</div>
+            <div class="admin-form-panel" id="providerFormPanel">
+              <div class="admin-form-panel-heading"><div><h4 id="providerFormTitle">Add contracted healthcare provider</h4><p>Provider updates appear in the public directory preview.</p></div><button class="button button-secondary button-small" type="button" id="cancelProviderEdit" hidden>Cancel edit</button></div>
+              <form id="addProviderForm" class="admin-edit-form">
+                <input type="hidden" id="providerEditId">
+                <label><span>Provider / facility name</span><input type="text" id="newProviderName" placeholder="Healthcare provider name" maxlength="140" required></label>
+                <label><span>Provider type</span><select id="newProviderType"><option value="hospital">Hospital</option><option value="clinic">Clinic</option><option value="health-center">Health center</option><option value="pharmacy">Pharmacy</option></select></label>
+                <label><span>Area / city</span><input type="text" id="newProviderArea" placeholder="Area, city" maxlength="120" required></label>
+                <label><span>Full address</span><input type="text" id="newProviderAddress" placeholder="Street, district, city" maxlength="240" required></label>
+                <label><span>Contact number</span><input type="tel" id="newProviderPhone" placeholder="Optional contact number" maxlength="50"></label>
+                <label><span>Services</span><input type="text" id="newProviderServices" placeholder="e.g. consultations, diagnostics" maxlength="240"></label>
+                <div class="admin-form-actions"><button class="button button-primary button-small" type="submit" id="saveProviderButton">Add provider</button><button class="button button-secondary button-small" type="reset" id="resetProviderForm">Clear form</button></div>
+                <div id="adminAddMessage" class="inline-message" role="status" hidden></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand brand-footer" href="#top"><img src="assets/hani-health-mark.jpg" alt="" class="brand-mark"><span class="brand-copy"><strong>HANI <span>HEALTH</span></strong><span class="brand-sub">DISCOUNT CARD</span><small data-i18n="brandTagline">Affordable, Inclusive Healthcare</small></span></a><p data-i18n="footerBlurb">A convenient way to discover participating healthcare providers and manage your membership journey.</p></div>
+      <div class="footer-links"><strong data-i18n="footerExplore">Explore</strong><a href="#benefits" data-i18n="navBenefits">Benefits</a><a href="#directory" data-i18n="navDirectory">Find care</a><a href="#digital-card" data-i18n="navCard">Digital card</a><a href="#verify" data-i18n="navVerify">Verify membership</a></div>
+      <div class="footer-links footer-contact"><strong data-i18n="footerSupport">Support</strong><a href="#contact" data-i18n="footerContact">Contact information</a><span data-i18n="supportPending">Official contact details pending</span><span data-i18n="footerHours">Support hours to be confirmed</span></div>
+      <div class="footer-language"><strong data-i18n="footerLanguage">Choose a language</strong><p data-i18n="footerLanguageText">The interface supports five languages.</p><div class="language-tags"><span>EN</span><span>AR</span><span>UR</span><span>HI</span><span>BN</span></div></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="yearNow">2026</span> Hani Health Discount Card</span><span data-i18n="footerDemo">Website prototype · Demo data only</span><a href="#top" data-i18n="backTop">Back to top ↑</a></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
